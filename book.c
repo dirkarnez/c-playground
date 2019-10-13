@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "memory.h"
 #include "book.h"
 
 book* book_new(void) {
-	book* out = malloc(sizeof(book));
+	book* out = new(book);
 	if (out == NULL)
 	{
 		puts("Some kind of malloc() error");
