@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "book.h"
 
-
 #define p() (3*3)
 
 const int val = p() * p();

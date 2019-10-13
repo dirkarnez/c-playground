@@ -10,6 +10,7 @@ book* book_new(void) {
 		puts("Some kind of malloc() error");
 		exit(1);
 	}
+	out->id = 0;
 	out->name = NULL;
 	out->content = NULL;
 	return out;
@@ -24,7 +25,8 @@ void book_free(book* self) {
 }
 
 void book_read(book* self) {
-	printf("Book name: %s, content: %s\n", 
+	printf("Book id: %d, name: %s, content: %s\n", 
+		self->id,
 		(self->name ? self->name : "No name"), 
 		(self->content ? self->content : "No content")
 	);

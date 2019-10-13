@@ -1,9 +1,10 @@
 #pragma once
+#include "memory.h"
 
-typedef struct book {
+typedef_entity_struct(book, struct {
 	char* name;
 	char* content;
-} book;
+});
 
 book* book_new(void);
 void book_free(book* self);
