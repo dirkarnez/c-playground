@@ -9,7 +9,8 @@ c-playground
 
 ### Object Oriented Programming
 - `book.h`, `book.c`
-  - object state
+  - [x] instance state
+  - [ ] class state
 
 ### Self-modifying
 - [How to write self modifying code in C?](https://stackoverflow.com/questions/7447013/how-to-write-self-modifying-code-in-c)
