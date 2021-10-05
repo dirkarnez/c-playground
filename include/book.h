@@ -22,11 +22,24 @@
 * } audio_driver_t;
 */
 	
-typedef_entity_struct(book, struct {
+//typedef struct book{
+//	unsigned int id;
+//	char* name;
+//	char* content;
+//	//void (*book_t_free)(book_t* self);
+//	//void (*book_t_read)();
+//	//void (*read)(struct book* self);
+//} book_t;
+
+struct book {
+	unsigned int id;
 	char* name;
 	char* content;
-});
 
-book* book_new(void);
-void book_free(book* self);
-void book_read(book* self);
+	unsigned int read_count;
+
+	void (*read)(struct book* self);
+};
+
+struct book* book_new(void);
+void book_free(struct book* book);

@@ -1,3 +1,8 @@
-cmake_minimum_required(VERSION 2.6.0)
+cmake_minimum_required(VERSION 3.18)
 project(c-playground C)
-add_executable(c-playground main.c)
+add_executable(${PROJECT_NAME}
+    "src/main.c"
+    "src/book.c"
+)
+
+include_directories(include)
