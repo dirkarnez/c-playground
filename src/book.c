@@ -3,6 +3,7 @@
 #include "memory.h"
 #include "book.h"
 
+// undefined in book.h on purpose
 void book_read(struct book* self) {
 	self->read_count++;
 
