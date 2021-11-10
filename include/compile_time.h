@@ -6,6 +6,12 @@
 #define add(a, b) ((a) + (b))
 #define minus(a, b) ((a) - (b))
 
+// MSVC
+// #pragma message( "Compiling " __FILE__ )
+
+// GCC
+// #pragma message "Compiling " __FILE__ "..."
+
 #define compile_time_if(y, a, b) ((y == ADD) ? (add(a, b)) : (y == MINUS) ? (minus(a, b)) : -1) // should do compile time exception
 
 /* usage
