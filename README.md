@@ -11,6 +11,13 @@ c-playground
 - `book.h`, `book.c`
   - [x] instance state
   - [ ] class state
+  - [ ] static proxy
+
+### Operators
+- [ ] Operator overloading
+
+### Function
+- [ ] Higer order function
 
 ### Self-modifying
 - [How to write self modifying code in C?](https://stackoverflow.com/questions/7447013/how-to-write-self-modifying-code-in-c)
