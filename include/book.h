@@ -31,6 +31,30 @@
 //	//void (*read)(struct book* self);
 //} book_t;
 
+
+// struct input_plugin_curl_userdata {
+//     strbuf url;
+//     strbuf buffer;
+//     strbuf tmp;
+//     taglist tags;
+//     CURL* handle;
+//     CURLM* mhandle;
+//     struct curl_slist* headers;
+//     unsigned int connect_timeout;
+//     unsigned int read_timeout;
+//     unsigned int ignore_icecast;
+//     int tags_sent;
+//     int icy_header;
+//     unsigned int metaint;
+//     unsigned int metaread;
+//     unsigned int in_headers;
+//     long verbose;
+//     size_t (read)(struct input_plugin_curl_userdata, void*, size_t, const tag_handler*, unsigned int timeout);
+// };
+
+// typedef struct input_plugin_curl_userdata input_plugin_curl_userdata;
+
+
 struct book {
 	unsigned int id;
 	char* name;
