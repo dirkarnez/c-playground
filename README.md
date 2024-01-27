@@ -12,6 +12,7 @@ c-playground
   - [x] instance state
   - [ ] class state
   - [ ] static proxy
+- [**Object-like C structs (Example)**](https://coderwall.com/p/zgxwsw/object-like-c-structs)
 
 ### Operators
 - [ ] Operator overloading
