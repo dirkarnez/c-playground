@@ -3,6 +3,28 @@
 #include "memory.h"
 #include "book.h"
 
+/*
+#include <stdio.h> // 引入标准输入输出库
+
+typedef struct esp_eth_phy_s esp_eth_phy_t;
+
+struct esp_eth_phy_s {
+ void (*reset)(esp_eth_phy_t *phy);
+};
+
+void reset(esp_eth_phy_t *phy) {
+    printf("Hello, World!\n"); // 使用 printf 打印字符串并换行
+}
+
+int main() { // 主函数开始
+    esp_eth_phy_t phy = { .reset = reset };
+
+    phy.reset(&phy);
+    
+    return 0; // 程序正常结束，返回 0
+} // 主函数结束
+
+*/
 // undefined in book.h on purpose
 void book_read(struct book* self) {
 	self->read_count++;
